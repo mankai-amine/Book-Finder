@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import SearchBook from "./components/SearchBook";
+import BooksList from "./components/BooksList";
 
 function App() {
+  
+  function searchBooksHandler (title) {
+    console.log(title)
+  }
+
+  const books = [{
+    id: 'id',
+    title: "title",
+    authors: ["author 1", "author 2"],
+    publisher: "publisher",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/1200px-Google_Images_2015_logo.svg.png",
+    info: "info",
+  }];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section>
+        <SearchBook onSearch={searchBooksHandler} />
+      </section>
+      <section>
+        <BooksList books={books} />
+      </section>
+    </>
   );
 }
 
