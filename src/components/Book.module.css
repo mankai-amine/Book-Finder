@@ -11,7 +11,7 @@
 
 .book h2 {
   font-size: 2rem;
-  color: #f7e702;
+  color: white;
 }
 
 .book h3 {
@@ -27,4 +27,11 @@
 
 .book button {
   border-radius: 12px;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .book {
+    width: calc(100% - 2rem); 
+  }
 }
