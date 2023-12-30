@@ -1,17 +1,5 @@
-.control {
-  margin: 1rem 0;
-}
-
-.control label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  text-align: left;
-}
-
 .control input,
 .control textarea {
-  display: block;
   font: inherit;
   padding: 0.2rem;
   border: 1px solid #ccc;
@@ -24,9 +12,7 @@
   border-color: #230052;
 }
 
-.inputContainer {
-  position: relative;
+.control form{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }

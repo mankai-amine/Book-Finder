@@ -7,31 +7,46 @@
   text-align: center;
   color: white;
   width: calc(50% - 2rem);
+  display: flex;
+  align-items: center;
+}
+
+.book .details {
+  flex-grow: 1; 
+}
+
+.book img {
+  margin-right: 10px;
 }
 
 .book h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 
 .book h3 {
   color: #eccf77;
-  margin: 0;
   font-size: 1rem;
-  margin-bottom: 2rem;
 }
 
 .book img {
   margin-bottom: 1rem;
+  height: auto; 
 }
 
 .book button {
   border-radius: 12px;
+  margin-top: 1rem;
 }
 
-/* For smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .book {
     width: calc(100% - 2rem); 
+  }
+}
+
+@media (max-width: 767px) {
+  .book {
+    flex-direction: column;
   }
 }

@@ -13,7 +13,7 @@ function SearchBook(props) {
 
   return (
     <div className={classes.control}>
-      <form className={classes.inputContainer} onSubmit={submitHandler}>
+      <form onSubmit={submitHandler}>
         <input
           type='text'
           id='title'
