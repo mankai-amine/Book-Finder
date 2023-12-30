@@ -88,11 +88,12 @@ function App() {
   }
 
   if (isLoading) {
-    content = <p>Loading...</p>;
+    content = <p className="loading">Loading...</p>;
   }
 
   return (
     <>
+      <h1>BOOK FINDER</h1>
       <section>
         <SearchBook onSearch={searchBooksHandler} />
       </section>
