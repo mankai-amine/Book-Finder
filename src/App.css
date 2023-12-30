@@ -1,8 +1,13 @@
 section {
-  margin: 1rem auto;
+  margin: 0 auto;
   width: 90%;
   max-width: 80rem;
   padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #001a52;
 }
 
 button {
@@ -22,4 +27,10 @@ button:hover,
 button:active {
   background-color: #460897;
   border-color: #460897;
+}
+
+.loading {
+  text-align: center;
+  color: #001a52;
+  font-weight: 700;
 }
