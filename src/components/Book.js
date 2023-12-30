@@ -11,14 +11,16 @@ const Book = (props) => {
 
   return (
     <li className={classes.book}>
-      <h2>{props.title}</h2>
-      <h3>By: {authors}</h3>
-      <h3>Published By: {props.publisher}</h3>
-      <img src={props.image} alt={props.image}/>
-      <div>
-        <a href={props.info} target="_blank" rel="noopener noreferrer">
-          <button>See this Book</button>
-        </a>
+      <img src={props.image} alt={props.image} />
+      <div className={classes.details}>
+        <h2>{props.title}</h2>
+        <h3>By: {authors}</h3>
+        <h3>Published By: {props.publisher}</h3>
+        <div>
+          <a href={props.info} target="_blank" rel="noopener noreferrer">
+            <button>See this Book</button>
+          </a>
+        </div>
       </div>
     </li>
   );
